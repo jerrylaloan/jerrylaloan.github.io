@@ -6,8 +6,9 @@
     <link href="./output.css" rel="stylesheet" />
     <title>Jerry Laloan</title>
   </head>
-  <body>
-    <div class="min-h-screen bg-white font-mono">
+  <body class="font-mono bg-white">
+    <!-- start hero -->
+    <div class="min-h-screen">
       <div
         class="dark:bg-darkBg inset-0 flex min-h-[100vh] w-full flex-col items-center justify-center bg-white bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:70px_70px]"
       >
@@ -41,5 +42,89 @@
         </div>
       </div>
     </div>
+    <!-- end hero  -->
+
+    <!-- start timeline -->
+    <div class="max-w-4xl mx-auto text-center py-16 flex flex-col gap-16">
+      <h1 class="text-3xl font-heading md:text-4xl lg:text-5xl">Experiences</h1>
+
+      <div class="space-y-12">
+        <!-- Timeline Item 1 -->
+        <div class="flex items-center">
+          <div class="w-1/4">
+            <div
+              class="text-2xl font-bold bg-black text-white p-4 transform inline-block shadow-[5px_5px_0_0_rgba(0,0,0,1)]"
+            >
+              2022-2024
+            </div>
+          </div>
+          <div class="w-3/4">
+            <a href="https://request.finance" target="_blank">
+              <div
+                class="flex flex-col gap-4 align-middle text-left bg-white p-6 border-4 border-black transform shadow-[8px_8px_0_0_rgba(0,0,0,1)]"
+              >
+                <img
+                  src="request-finance-logo.svg"
+                  alt="rf-logo"
+                  width="150px"
+                  height="50px"
+                />
+                <h2 class="text-xl font-bold">Request Finance</h2>
+                <p>
+                  The all-in-one finance platform for crypto and fiat operations
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="flex items-center">
+          <div class="w-1/4">
+            <div
+              class="text-2xl font-bold bg-gray-800 text-white p-4 transform inline-block shadow-[5px_5px_0_0_rgba(0,0,0,1)]"
+            >
+              2017-2022
+            </div>
+          </div>
+          <div class="w-3/4">
+            <a href="https://populix.co" target="_blank">
+              <div
+                class="flex flex-col gap-4 align-middle text-left bg-gray-100 p-6 border-4 border-black transform shadow-[8px_8px_0_0_rgba(0,0,0,1)]"
+              >
+                <img
+                  src="populix-logo.svg"
+                  alt="rf-logo"
+                  width="150px"
+                  height="50px"
+                />
+                <h2 class="text-xl font-bold">Populix</h2>
+                <p>The Go-to Data and Insight Services</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3 -->
+        <div class="flex items-center">
+          <div class="w-1/4">
+            <div
+              class="text-2xl font-bold bg-gray-600 text-white p-4 transform inline-block shadow-[5px_5px_0_0_rgba(0,0,0,1)]"
+            >
+              2016-2017
+            </div>
+          </div>
+          <div class="w-3/4">
+            <div
+              class="flex flex-col gap-4 align-middle text-left bg-white p-6 border-4 border-black transform shadow-[8px_8px_0_0_rgba(0,0,0,1)]"
+            >
+              <h2 class="text-xl font-bold mb-2">Neurosoft Indonesia</h2>
+              <p>Software Solution for Retail</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end timeline -->
   </body>
 </html>
