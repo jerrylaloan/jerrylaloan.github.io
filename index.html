@@ -44,6 +44,20 @@
     </div>
     <!-- end hero  -->
 
+    <!-- start stacks -->
+    <div class="md:px-8 py-20">
+      <section id="skills" class="mx-auto text-center w-3/4">
+        <h2 class="text-3xl font-bold mb-4 text-black">Stacks</h2>
+        <div id="stack-list" class="flex flex-wrap items-center justify-center">
+          <!-- start item -->
+          <!-- list from js -->
+          <!-- end item -->
+        </div>
+      </section>
+    </div>
+
+    <!-- end stacks -->
+
     <!-- start timeline -->
     <div class="max-w-4xl mx-auto text-center py-16 flex flex-col gap-16">
       <h1 class="text-3xl font-heading md:text-4xl lg:text-5xl">Experiences</h1>
@@ -126,5 +140,119 @@
       </div>
     </div>
     <!-- end timeline -->
+
+    <script>
+      (() => {
+        const stackList = document.getElementById("stack-list");
+        const STACKS = [
+          {
+            name: "React.js",
+            iconUrl:
+              "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+          },
+          {
+            name: "Node.js",
+            iconUrl:
+              "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
+          },
+          {
+            name: "MongoDB",
+            iconUrl:
+              "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg",
+          },
+          {
+            name: "MySQL",
+            iconUrl:
+              "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg",
+          },
+          {
+            name: "Typescript",
+            iconUrl:
+              "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+          },
+          {
+            name: "Javascript",
+            iconUrl:
+              "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+          },
+          {
+            name: "Python",
+            iconUrl:
+              "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+          },
+          {
+            name: "Amazon Web Services",
+            iconUrl:
+              "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+          },
+          {
+            name: "Google Cloud",
+            iconUrl:
+              "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
+          },
+          {
+            name: "Docker",
+            iconUrl:
+              "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+          },
+          {
+            name: "Elasticsearch",
+            iconUrl:
+              "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/elasticsearch/elasticsearch-original.svg",
+          },
+          {
+            name: ".NET Core",
+            iconUrl:
+              "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg",
+          },
+          {
+            name: "MSSQL",
+            iconUrl:
+              "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg",
+          },
+          {
+            name: "NestJs",
+            iconUrl:
+              "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg",
+          },
+          {
+            name: "TailwindCSS",
+            iconUrl:
+              "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+          },
+          {
+            name: "MaterialUI",
+            iconUrl:
+              "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg",
+          },
+        ];
+
+        STACKS.forEach((stack) => {
+          const stackItem = document.createElement("div");
+          stackItem.classList.add("stack-item");
+
+          stackItem.innerHTML = `
+                  <span
+                    class="bg-white inline-flex text-primary py-0.5 px-3 items-center justify-between text-xs capitalize border-2 border-black rounded-full hover:bg-gray-gray1 mb-2 mr-2"
+                  >
+                    <img
+                      alt="${stack.name}"
+                      src="${stack.iconUrl}"
+                      decoding="async"
+                      data-nimg="1"
+                      class="object-cover w-4 h-4 mr-1"
+                      loading="lazy"
+                      style="color: transparent"
+                      width="16"
+                      height="16"
+                    />
+                    <span class="capitalize lg:inline leading-5">${stack.name}</span>
+                  </span>
+                `;
+
+          stackList.appendChild(stackItem);
+        });
+      })();
+    </script>
   </body>
 </html>
